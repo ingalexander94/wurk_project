@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  server:
+    environment:
+      - NODE_ENV=local
+    hostname: kruw_services_server
+    container_name: kruw_services_server
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: base
+    ports:
+      - 4004:4004
+    command: >
+      sh -c "npm run dev"
+    volumes:
+      - ./src/src:/app/src
+
+  kruw_db:
+    image: mariadb:11.2.3
+    hostname: kruw_db
+    container_name: kruw_db
+    restart: unless-stopped
+    env_file:
+      - src/local.env
+    volumes:
+      - ./dbdata:/var/lib/mysql
+    ports:
+      - 3316:3306

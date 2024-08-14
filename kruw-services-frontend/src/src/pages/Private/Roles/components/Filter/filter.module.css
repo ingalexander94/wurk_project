@@ -1,0 +1,62 @@
+div.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.filter div {
+  display: flex;
+  column-gap: 10px;
+}
+
+div.filter div button {
+  width: auto;
+  padding: 0 20px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  height: 30px;
+}
+
+div.filter label {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  position: relative;
+}
+
+div.filter label img {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+div.filter label img.clean {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+div.filter label input {
+  height: 30px;
+  padding: 8px 30px 8px 10px;
+  width: 320px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+div.filter button {
+  width: 200px;
+  height: 40px;
+}

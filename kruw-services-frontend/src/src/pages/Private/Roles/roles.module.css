@@ -1,0 +1,11 @@
+div.roles_wrapper {
+  border-radius: 10px;
+  background: var(--white-color);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  flex: 1;
+}
