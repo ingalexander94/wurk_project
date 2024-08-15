@@ -41,7 +41,8 @@ body {
   box-sizing: border-box;
 }
 
-input {
+input,
+select {
   caret-color: var(--primary-color);
   height: 50px;
   padding: 0 20px;
@@ -81,7 +82,9 @@ ul {
 
 input:not(.invalid):focus,
 input:not(.invalid):hover,
-textarea:focus {
+textarea:focus,
+select:hover,
+select:focus {
   border: 1px solid var(--primary-color) !important;
   outline: none !important;
 }

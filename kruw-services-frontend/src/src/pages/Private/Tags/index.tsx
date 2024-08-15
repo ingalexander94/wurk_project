@@ -2,6 +2,7 @@ import MenuFilter from "src/components/UI/MenuFilter";
 import { Menu } from "src/interfaces";
 import { privateRoutes } from "src/models";
 import Layout from "./Layout";
+import { TagProvider } from "src/context";
 import styles from "./tags.module.css";
 
 const menu: Menu[] = [
@@ -19,10 +20,12 @@ const menu: Menu[] = [
 
 const Tags = () => {
   return (
-    <div className={styles.tags}>
-      <MenuFilter menu={menu} />
-      <Layout />
-    </div>
+    <TagProvider>
+      <div className={styles.tags}>
+        <MenuFilter menu={menu} />
+        <Layout />
+      </div>
+    </TagProvider>
   );
 };
 

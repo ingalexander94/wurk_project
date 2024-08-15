@@ -24,5 +24,9 @@
   "AC1105": "API KEY no es válida.",
   "AC5000": "Error interno del servidor.",
   "JR1100": "El código no existe en el archivo de errores json.",
-  "JR1101": "El archivo de errores json no existe."
+  "JR1101": "El archivo de errores json no existe.",
+  "DM1100": "El código del dispositivo ya ha sido utilizado.",
+  "DM1101": "El dispositivo no existe.",
+  "TM1100": "El código y número de la tarjeta ya han sido utilizados.",
+  "TM1101": "La tarjeta no existe."
 }

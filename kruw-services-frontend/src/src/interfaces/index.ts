@@ -3,3 +3,4 @@ export * from "./auth.interface";
 export * from "./axios.interface";
 export * from "./user.interface";
 export * from "./roles.interface";
+export * from "./tag.interface";

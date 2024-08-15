@@ -1,3 +1,7 @@
+div.hide {
+  display: none !important;
+}
+
 div.empty {
   height: 100%;
   flex: 1;

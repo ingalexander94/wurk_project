@@ -8,6 +8,7 @@ const Table = () => {
   return (
     <div className={styles.table}>
       <Empty
+        loading={false}
         title="¡Aún no tienes roles agregados!"
         text="En esta pantalla encontrarás todos los roles agregados. Desde aquí puedes acceder a la información de cada rol asignado y gestionar la información de cada uno de los roles."
       />

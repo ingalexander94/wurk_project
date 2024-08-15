@@ -7,6 +7,7 @@ const Table = () => {
   return (
     <div className={styles.table}>
       <Empty
+        loading={false}
         title="¡Aún no tienes usuarios agregados!"
         text="En esta pantalla encontrarás todos los usuarios agregados. Desde aquí puedes acceder a la información de cada usuario y gestionar la información de cada uno."
       />
